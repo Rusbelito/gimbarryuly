@@ -15,7 +15,7 @@ export default function Input(props:input) {
             {/* Label */}
             <div className="flex justify-between mb-2">
                 <label htmlFor={props.name} className="block text-sm text-gray-600 dark:text-gray-200 capitalize">{props.label}</label>
-                <a href={props.rightroute} className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline">{props.rightlabel}</a>
+                <a href={props.rightroute || undefined} className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline">{props.rightlabel}</a>
             </div>
 
             {/* Input */}
